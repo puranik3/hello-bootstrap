@@ -1,2 +1,2 @@
 # About this project
-This project was created to explore and leran the features of [Twitter Bootstrap](http://getbootstrap.com/)
+This project was created to explore and learn features of [Twitter Bootstrap](http://getbootstrap.com/)
