@@ -1,0 +1,30 @@
+{
+  "name": "hello-bootstrap",
+  "version": "1.0.0",
+  "description": "Project to explore and learn Twitter Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puranik3/hello-bootstrap.git"
+  },
+  "keywords": [
+    "Twitter Bootstrap",
+    "getting started",
+    "node",
+    "css",
+    "css framework"
+  ],
+  "author": "Prashanth Puranik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puranik3/hello-bootstrap/issues"
+  },
+  "homepage": "https://github.com/puranik3/hello-bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
+}
