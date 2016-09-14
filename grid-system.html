@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <!-- @todo: add bootstrap theme file -->
+
+        <style>
+            .show-col [class^=col-] {
+                border: 1px solid rgba(86,61,124,.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container show-col"> <!-- Change this to container-fluid for rows to take up full width -->
+            <div class="row">
+                <div class="col-md-3">Column 1</div>
+                <div class="col-md-3">Column 2</div>
+                <div class="col-md-3">Column 3</div>
+                <div class="col-md-3">Column 4</div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">Column 1</div>
+                <div class="col-md-4">Column 2</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">Column 1</div>
+                <div class="col-md-6">Column 2</div>
+            </div>
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+            <div class="row">
+                <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            </div>
+
+            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+            <div class="row">
+                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            </div>
+
+            <!-- Columns are always 50% wide, on mobile and desktop -->
+            <div class="row">
+                <div class="col-xs-6">.col-xs-6</div>
+                <div class="col-xs-6">.col-xs-6</div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3. Resize your viewport or check it out on your phone for an example.</div>
+                <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+                <!-- Add the extra clearfix for only the required viewport -->
+                <div class="clearfix visible-xs-block"></div>
+
+                <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+            </div>
+
+            <!-- Nesting -->
+            <div class="row">
+                <div class="col-xs-6">.col-xs-6 .col-sm-3.</div>
+                <div class="col-xs-6">
+                    .col-xs-6 .col-sm-3.
+                    <div class="row">
+                        <div class="col-xs-6">Nested col 1</div>
+                        <div class="col-xs-6">Nested col 2</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Push and pull -->
+            <div class="row">
+                <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+                <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+            </div>
+        </div>
+    </body>
+    <script src="node_modules/jquery/dist/jquery.js">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js">
+</html>
