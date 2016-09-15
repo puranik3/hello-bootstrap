@@ -25,24 +25,50 @@
             </div>
             <!-- This renders fine -->
             
-            <label class="checkbox-inline">
-                <input type="checkbox"> Check me out
-            </label>
+            <div>
+                <label class="checkbox-inline">
+                    <input type="checkbox"> 1
+                </label>
 
-            <label class="checkbox-inline">
-                <input type="checkbox" disabled> Check me out too
-            </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" disabled> 2
+                </label>
+            </div>
 
-            <button type="submit" class="btn btn-default">Submit</button>
+            <div>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                </label>
+                
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                </label>
+            </div>
 
             <div class="form-group">
                 <label for="numAmount" class="control-label">Amount (to the nearest dollar)</label>
-                <div class="input-group">
+                <div class="input-group has-feedback has-success">
                     <span class="input-group-addon">$</span>
                     <input type="number" class="form-control" id="numAmount" name="amount" aria-label="Amount (to the nearest dollar)">
                     <span class="input-group-addon">.00</span>
+                    <!--
+                        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                    -->
                 </div>
             </div>
+
+            <div class="form-group">
+                <label for="selectNum" class="control-label">Select a number</label>
+                <select multiple class="form-control" id="selectNum">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
         </form>
 
         <form class="form-inline container">
